@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>All Star Sneakers | Home</title>
+  <link>index.html</link>
+  <description>This is home page of our site ! Welcome !</description>
+  <item>
+    <title>All Star Sneakers | Gallery</title>
+    <link>gallery.html</link>
+    <description>Welcome to the gallery ! See all our latest models !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | About</title>
+    <link>about.html</link>
+    <description>Here you can read about our company history and our final agenda. You can also read about author.</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Contact</title>
+    <link>contact.html</link>
+    <description>Fill the form and contact us. Tell us what you think about our sneakers !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Nike</title>
+    <link>nike1.html</link>
+    <description>First model from our Nike section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Nike</title>
+    <link>nike2.html</link>
+    <description>Second model from our Nike section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Nike</title>
+    <link>nike3.html</link>
+    <description>Third model from our Nike section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Adidas</title>
+    <link>adidas1.html</link>
+    <description>First model from our Adidas section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Adidas</title>
+    <link>adidas2.html</link>
+    <description>Second model from our Adidas section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Adidas</title>
+    <link>adidas3.html</link>
+    <description>Third model from our Adidas section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Puma</title>
+    <link>puma1.html</link>
+    <description>First model from our Puma section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Puma</title>
+    <link>puma2.html</link>
+    <description>Second model from our Puma section. Tell us what you think !</description>
+  </item>
+  <item>
+    <title>All Star Sneakers | Puma</title>
+    <link>puma3.html</link>
+    <description>Third model from our Puma section. Tell us what you think !</description>
+  </item>
+</channel>
+
+</rss>

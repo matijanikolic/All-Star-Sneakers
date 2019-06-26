@@ -1,0 +1,1264 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    src: url('SourceSansPro-Regular.ttf');
+    font-family: moj;
+}
+
+
+$big1: 1200px;
+$med: 992px;
+$spec: 850px;
+$med1: 768px;
+$med11: 767px;
+$med2: 630px;
+$small0: 576px;
+$small: 504px;
+$small1: 480px;
+$small2: 380px;
+
+@mixin big1 {
+    @media (max-width: #{$big1}){
+        @content;
+    }
+}
+
+@mixin med {
+    @media (max-width: #{$med}){
+        @content;
+    }
+}
+
+@mixin spec {
+    @media (max-width: #{$spec}){
+        @content;
+    }
+}
+
+@mixin med1 {
+    @media (max-width: #{$med1}){
+        @content;
+    }
+}
+
+@mixin med11 {
+    @media (max-width: #{$med11}){
+        @content;
+    }
+}
+
+@mixin med2 {
+    @media (max-width: #{$med2}){
+        @content;
+    }
+}
+
+@mixin small0 {
+    @media (max-width: #{$small0}){
+        @content;
+    }
+}
+
+@mixin small {
+    @media (max-width: #{$small}){
+        @content;
+    }
+}
+
+@mixin small1 {
+    @media (max-width: #{$small1}){
+        @content;
+    }
+}
+
+@mixin small2 {
+    @media (max-width: #{$small2}){
+        @content;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: moj;
+    position: relative;
+
+    .fix{
+        position: fixed;
+        top: 0;
+
+
+        ul{
+
+            li{
+
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    transition: .4s;
+
+                    &:hover{
+                        color: rgb(53, 224, 236);
+                    }
+                }
+                
+            }
+        }
+    }
+    
+    a {
+        text-decoration: none;
+        color: #9ca0b1;
+      }
+      
+      .non{
+          margin-left: 42px;
+          
+        @include med{
+            text-align: center;
+            margin: 0%;
+        }
+
+        @include small2{
+            margin-top: 0%;
+            padding-top: 0%;
+            font-size: 1.7em;
+        }
+      }
+
+          .glow {
+            color: #fff;
+          font-size: 1.4em;
+              font-family: 'ubuntu';
+              text-transform: uppercase;
+          font-weight: 700;
+          font-family: 'Josefin Sans',sans-serif;
+          background: linear-gradient(to right,#18dbd2 20%,cyan 50%,#5bdaff 60%);
+          background-size: auto auto;
+          background-clip: border-box;
+          background-size: 200% auto;
+          color: #fff;
+          background-clip: text;
+          text-fill-color: transparent;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: textclip 1.5s linear infinite;
+          display: inline-block;
+
+          @include med{
+              font-size: 1em;
+          }
+
+          @include med2{
+              font-size: 0.8em;
+          }
+
+          @include small{
+              font-size: 0.6em;
+          }
+
+          
+
+          }
+          
+      
+      @keyframes textclip {
+       to {
+        background-position:200% center;
+       }
+    
+    
+    
+   
+}
+
+}
+
+.gla{
+    text-decoration: none;
+}
+
+.side{
+    background-color: rgb(41, 187, 192);
+    padding-top: 1%;
+
+    li{
+
+        a{
+            color: whitesmoke;
+            font-size: 1.1em;
+            text-decoration: none;
+        }
+    }
+}
+
+body{
+    font-family: moj;
+
+    .sneak1{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		background-image: url("../images/header.png");
+		background-size: cover;
+        .sneak2{
+
+
+            .row{
+
+                .firstcol{
+                    @include med{
+                        margin: 10% 0%;
+                    }
+
+                    #content1{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        h1{
+                            font-size: 2.8em;
+                            padding: 5% 0%;
+
+                            @include big1{
+                                font-size: 2.3em;
+                            }
+
+                            @include med{
+                                padding: 0%;
+                            }
+
+                            @include small1{
+                                font-size: 1.8em;
+                            }
+
+                            @include small2{
+                                font-size: 2.2em;
+                                text-align: center;
+                            }
+                        }
+
+                        p{
+                            font-size: 1.8em;
+                            padding: 5% 0%;
+                            font-weight: bold;
+
+                            @include big1{
+                                font-size: 1.5em;
+                            }
+
+                            @include small2{
+                                padding: 10% 0%;
+                            }
+                        }
+
+                        .tet{
+                            font-family: Roboto, sans-serif;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 50px;
+                            box-shadow: rgba(108, 39, 255, 0.3) 0px 0px 15px;
+                            text-align: center;
+                            cursor: pointer;
+                            background: linear-gradient(to right, rgb(11, 169, 255) 0%, rgb(86, 217, 255) 51%, rgb(11, 169, 255) 100%) 0% 0% / 200%;
+                            padding: 4% 10%;
+                            border-radius: 50px;
+                            transition: all 0.3s ease 0s;
+
+                            @include big1{
+                                padding: 6% 15%;
+                            }
+
+                            @include med{
+                                padding: 4% 10%;
+                            }
+
+                            @include small1{
+                                padding: 6% 13%;
+                            }
+
+                            @include small2{
+                                padding: 8% 13%;
+                            }
+
+                            &:hover{
+                                background-position: right center;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+
+                .secondcol{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include med1{
+                        margin-top: 15%;
+                        
+                    }
+
+                    @include small0{
+                        display: none;
+                    }
+
+                    #image1{
+                        width: 100%;
+
+
+                        @include med{
+                            width: 60%;
+                        }
+
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body{
+    font-family: moj;
+
+    .section2{
+        margin: 5% 0%;
+
+        .sectioncont{
+
+            .cols{
+
+                .pan{
+                    transition: all .3s ease 0s;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include med{
+                        margin: 5% 0%;
+                    }
+
+                    &:hover{
+                        box-shadow: 0 0 50px rgba(153,153,153,.3);
+                    }
+
+                    h4{
+                        color: rgb(54, 202, 228);
+                        padding: 8% 0%;
+                    }
+
+                    p{
+                        font-family: moj;
+                        font-size: 1.3em;
+                        padding-bottom: 8%;
+
+                        @include med{
+                            text-align: justify;
+                        }
+
+                        @include small2{
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    a{
+                        transition: 0.7s;
+                        width: 50%;
+                        padding: 7% 0%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        @include med{
+                            width: 20%;
+                            padding: 3% 0%;
+                        }
+
+                        @include med1{
+                            width: 30%;
+                            padding: 4% 0%;
+                        }
+
+                        @include small2{
+                            width: 40%;
+                            padding: 6% 0%;
+                        }
+
+                        &:hover{
+                            background-color: rgb(52, 177, 199);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body{
+    font-family: moj;
+
+    .section3{
+        margin: 8% 0%;
+        width: 100%;
+
+        
+
+        .col3{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @include med{
+                margin-bottom: 15%;
+            }
+
+            @include small1{
+                margin: 20% 0%;
+            }
+
+            h2{
+                font-size: 3em;
+                color: rgb(50, 173, 204);
+
+                @include small{
+                    font-size: 2.5em;
+                }
+
+                @include small1{
+                    font-size: 2.2em;
+                }
+
+                @include small2{
+                    font-size: 2.5em;
+                    text-align: center;
+                }
+            }
+            
+
+            p{
+                padding: 10% 5%;
+                text-align: center;
+                font-size: 2em;
+
+                @include big1{
+                    font-size: 1.8em;
+                }
+
+                @include small{
+                    font-size: 1.5em;
+                }
+            }
+
+            a{
+
+                font-family: Roboto, sans-serif;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: #fff;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: 50px;
+                            box-shadow: rgba(108, 39, 255, 0.3) 0px 0px 15px;
+                            text-align: center;
+                            cursor: pointer;
+                            background: linear-gradient(to right, rgb(11, 169, 255) 0%, rgb(86, 217, 255) 51%, rgb(11, 169, 255) 100%) 0% 0% / 200%;
+                            padding: 4% 10%;
+                            border-radius: 50px;
+                            transition: all 0.3s ease 0s;
+
+                            @include small1{
+                                padding: 6% 12%;
+                            }
+
+                            &:hover{
+                                background-position: right center;
+                                color: #fff;
+                            }
+                
+            }
+        }
+
+        .col4{
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            padding-right: 0px;
+
+            @include med{
+                justify-content: center;
+            }
+
+            .sec3img{
+                width: 100%;
+
+                @include med{
+                    width: 80%;
+                }
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+body{
+
+    .section4{
+        margin: 10% 0%;
+
+        h2{
+            text-align: center;
+            padding: 7% 0%;
+            font-size: 3em;
+            color: rgb(41, 171, 211);
+        }
+
+        .card0{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+
+            @include med{
+                height: 150px;
+            }
+
+            @include med1{
+                height: 180px;
+                margin: 5% 0%;
+            }
+
+            @include med11{
+                height: 220px;
+            }
+
+            &:hover{
+                box-shadow: 0 0 50px rgba(153,153,153,.6);
+            }
+
+            p{
+                font-size: 1.7em;
+
+                @include med{
+                    font-size: 1.5em;
+                }
+            }
+
+            .logoHold{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 50%;
+
+                @include med1{
+                }
+
+                @include med11{
+                    width: 30%;
+                }
+                
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+body{
+    font-family: moj;
+
+    .footer{
+        color: white;
+        position: absolute;
+
+        .footer90{
+            margin: 5% 0%;
+        }
+
+        .sec5cont{
+
+            .soc2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include med{
+                    margin: 10% 0%;
+                }
+
+                #socials{
+                    width: 80%;
+                    margin: 0px auto;
+                    display: flex;
+                    justify-content: space-around;
+
+                    @include small1{
+                        width: 100%;
+                    }
+
+                    @include small2{
+                        justify-content: space-between;
+                    }
+
+                    a{
+                        font-size: 2.5em;
+                        transition: 0.4s;
+
+                        @include small1{
+                            font-size: 2em;
+                        }
+                        
+
+                                &:hover{
+                                    color: rgb(43, 182, 201);
+                                }
+                    }
+                }
+            }
+
+            .soc3{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .news{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    @include med{
+                        width: 100%;
+                    }
+
+                    label{
+                        color: rgb(43, 191, 211);
+                        font-size: 2em;
+                    }
+
+                    #news1{
+                        margin: 20% 0%;
+
+                        @include med{
+                            width: 40%;
+                            margin: 10% 0%;
+                        }
+
+                        @include small2{
+                            width: 70%;
+                            margin: 18% 0%;
+                        }
+                    }
+
+                    a{
+                        background-color: darken(cyan,20%);
+                    }
+                }
+            }
+
+            .colfinal{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                @include med{
+                    margin-top: 7%;
+                }
+
+                #menu2{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    width: 80%;
+
+                    @include small1{
+                        width: 100%;
+                    }
+
+                    p:first-child{
+                        font-size: 2em;
+                    }
+
+                    ul{
+                        display: flex;
+                        margin: 3% 0%;
+                        width: 50%;
+                        justify-content: space-around;
+
+                        @include med{
+                            width: 80%;
+                        }
+
+                        @include med1{
+                            width: 100%;
+                            margin-bottom: 8%;
+                        }
+
+                        li{
+
+                            a{
+                                font-size: 1.3em;
+                                text-decoration: none;
+                                transition: 0.4s;
+
+                                @include small2{
+                                    font-size: 1.1em;
+                                }
+
+                                &:hover{
+                                    color: rgb(43, 182, 201);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* Galerija */
+
+.gallery{
+    margin: 10% 0%;
+
+    h2{
+        text-align: center;
+        font-size: 3.5em;
+        color: rgb(55, 162, 194);
+        font-weight: bold;
+
+        @include med{
+            padding: 8% 0%;
+        }
+
+        @include small1{
+            padding-top: 14%;
+        }
+
+        @include small2{
+            font-size: 2.8em;
+            padding-top: 17%;
+        }
+
+    }
+
+    
+
+    .tain{
+
+        .firstRow{
+
+            h2{
+                text-align: center;
+                font-size: 3.5em;
+                padding: 7% 0%;
+                color: rgb(47, 147, 194);
+                font-weight: bold;
+                font-family: moj;
+
+            }
+        }
+
+        .secondRow{
+
+            .holders{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+
+                .background1{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 3px solid rgb(46, 156, 184);
+                    transition: 0.6s;
+
+                    @include small0{
+                        margin: 5% 0%;
+                    }
+
+                    &:hover{
+                        box-shadow: 0 0 50px rgba(18, 167, 226, 0.8);
+                    }
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* */
+
+body{
+
+    .sneaker{
+        margin: 10% 0%;
+
+        .sneakerHolder{
+
+            .row1{
+
+                .hol123{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include med{
+                        margin: 8% 0%;
+                    }
+
+                    @include small{
+                        margin: 15% 0%;
+                    }
+
+                    @include small2{
+                        margin: 25% 0%;
+                    }
+
+                    .specialHolder{
+                        width: 100%;
+
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .hol234{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+
+                    h2{
+                        font-size: 4em;
+                        color: rgb(45, 134, 194);
+                        font-weight: bold;
+
+                        @include small2{
+                            font-size: 3em;
+                        }
+                    }
+
+                    p{
+                        font-size: 2em;
+
+                        @include med{
+                            padding: 8% 0%;
+                        }
+                    }
+
+                    .prices2{
+                        display: flex;
+                        width: 60%;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        @include med{
+                            margin-bottom: 15%;
+                        }
+
+                        @include small0{
+                            width: 100%;
+                        }
+
+                        
+
+                        a{
+                            background-color: lighten(grey, 30%);
+                            width: 50px;
+                            transition: 0.5s;
+
+                            &:hover{
+                                color: rgb(51, 170, 185);
+                            }
+                        }
+
+                        .priceMid{
+                            background-color: #c2c2c2;
+                            width: 100px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            p{
+                                margin-bottom: 0%;
+                            }
+                        }
+                    }
+
+                    a{
+                        background-color: rgb(55, 151, 206);
+                        padding: 5% 10%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+                }
+            }
+
+            .row2{
+
+                .ended{
+                    margin: 10% 0%;
+
+
+                h2{
+                    text-align: center;
+                    color: rgb(140, 140, 150);
+                    font-size: 3em;
+                    padding-bottom: 8%;
+                    
+                }
+
+                p{
+                    font-size: 1.4em;
+
+                    @include small1{
+                        font-size: 1.2em;
+                    }
+                }
+
+                #modalP{
+                    text-align: center;
+                    padding: 6% 0%;
+                }
+
+                .mod1{
+                    background-color: rgb(55, 173, 194);
+                    display: block;
+                    margin: 0px auto;
+                    width: 20%;
+
+                    @include small{
+                        width: 40%;
+                    }
+                }
+
+                .mod2{
+                    background-color: whitesmoke;
+                    width: 80%;
+
+                    h4{
+                        font-size: 2.5em;
+                        padding: 5% 0%;
+                        text-align: center;
+                    }
+
+                    .comment{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 2% 0%;
+
+                        p{
+                            text-align: center;
+
+                            @include med{
+                                padding: 1% 0%;
+                            }
+                        }
+
+                        @include med{
+                            flex-direction: column;
+                            margin: 5% 0%;
+                        }
+                    }
+
+                    .mod4{
+
+                        a{
+                            display: block;
+                            margin: 0px auto;
+
+                        }
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+
+body{
+
+    .aboutMe{
+        margin: 10% 0%;
+
+        .aboutMe1{
+
+            .desc1{
+
+                @include med{
+                    margin: 20% 0%;
+                }
+
+                h2{
+                    text-align: center;
+                    font-size: 3em;
+                    color: rgb(51, 148, 192);
+                    padding-bottom: 7%;
+                }
+
+                p{
+                    font-size: 1.4em;
+                    text-align: justify;
+                    padding: 0% 5%;
+
+                    @include small2{
+                        font-size: 1.2em;
+                    }
+                }
+            }
+
+            .desc2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .aboutPicture{
+                    width: 100%;
+
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+
+            }
+
+            .aboutSecond{
+                margin: 20% 0%;
+
+                .desc3{
+
+                    h2{
+                        text-align: center;
+                        font-size: 3em;
+                        color: rgb(51, 148, 192);
+                        padding-bottom: 7%;
+                    }
+
+                    p{
+                        font-size: 1.4em;
+                        text-align: center;
+
+                        @include small2{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+
+            .aboutThird{
+
+                .desc4{
+
+                    @include med{
+                        margin-bottom: 15%;
+                    }
+                    
+                    h2{
+                        text-align: center;
+                        font-size: 3em;
+                        color: rgb(51, 148, 192);
+                        padding-bottom: 7%;
+                    }
+
+                    p{
+                        font-size: 1.4em;
+                        text-align: justify;
+                        padding: 5% 0%;
+
+                        @include med{
+                            text-align: center;
+                            font-size: 1.2em;
+                        }
+                    }
+
+                    .faIcons{
+                        width: 60%;
+                        margin: 0px auto;
+                        display: flex;
+                        justify-content: space-around;
+
+                        a{
+                            font-size: 1.8em;
+                            color: black;
+                            transition: 0.5s;
+
+                            &:hover{
+                                color: rgb(38, 141, 189);
+                            }
+                        }
+                    }
+                }
+
+                .desc5{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .myPicture{
+                        width: 80%;
+
+                        @include med{
+                            width: 70%;
+                        }
+
+                        img{
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+body{
+
+    .con{
+        margin: 10% 0%;
+
+        @include med{
+            margin: 20% 0%;
+        }
+
+        @include small{
+            margin: 35% 0%;
+        }
+
+        .contain{
+
+            h2{
+                text-align: center;
+                padding-bottom: 5%;
+                font-size: 3em;
+                color: rgb(53, 142, 194);
+
+                @include small{
+                    padding-bottom: 15%;
+                }
+
+                @include small1{
+                    font-size: 2.7em;
+                }
+
+                @include small2{
+                    font-size: 2.2em;
+                }
+            }
+
+            .kolona{
+
+                form{
+
+                    .col{
+                        margin: 1% 0%;
+                    }
+
+                    .textCol{
+                        padding-bottom: 5%;
+                    }
+
+                    .submitButton{
+                        display: block;
+                        margin: 0% auto;
+                        width: 15%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(61, 168, 201);
+                        transition: 1s;
+
+                        &:hover{
+                            background-color: lighten(cyan,30%);
+                        }
+
+                        
+
+                        @include med{
+                            width: 25%;
+                        }
+
+                        @include small{
+                            width: 40%;
+                        }
+
+                        @include small2{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* label color */
+.input-field label {
+    color: rgb(52, 170, 190);
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: rgb(52, 170, 190);
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(33, 172, 197);
+    box-shadow: 0 1px 0 0 rgb(33, 172, 197);
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: rgb(32, 180, 190);
+  }
